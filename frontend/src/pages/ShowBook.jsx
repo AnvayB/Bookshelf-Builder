@@ -29,7 +29,7 @@ function ShowBook() {
   return (
     <div className="p-4">
       <BackButton />
-      <h1 className="text-3x1 my-4">Show Book</h1>
+      <h1 className="text-3xl my-4">Show Book</h1>
       {loading ? (
         <Spinner />
       ) : book && (
