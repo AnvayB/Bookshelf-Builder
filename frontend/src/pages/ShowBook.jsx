@@ -7,11 +7,11 @@ import Spinner from "../components/Spinner"
 function ShowBook() {
   const [book, setBook] = useState(null)
   const [loading, setLoading] = useState(false)
-  const {id} = useParams()
+  const { id } = useParams()
 
   useEffect(() => {
     setLoading(true)
-    axios 
+    axios
       .get(`http://localhost:5555/books/${id}`)
       .then((res) => {
         setBook(res.data)
@@ -21,11 +21,11 @@ function ShowBook() {
         console.log(error)
         setLoading(false)
       })
-  
-    
+
+
   }, [])
-  
-  
+
+
   return (
     <div className="p-4">
       <BackButton />

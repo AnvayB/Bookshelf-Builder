@@ -53,8 +53,8 @@ function Home() {
           <MdOutlineAddBox className="text-sky-800 text-4x1" />
         </Link>
       </div>
-      {loading ? 
-      <Spinner /> :
+      {loading ?
+        <Spinner /> :
         showType === 'table' ? (
           <BooksTable books={books} />
         ) : (
