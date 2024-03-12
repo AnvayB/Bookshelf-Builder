@@ -22,18 +22,18 @@ function CreateBooks() {
       .post('http://localhost:5555/books', data)
       .then(() => {
         setLoading(false)
-        enqueueSnackbar('Book Created Successfully', { variant: 'success'})
+        enqueueSnackbar('Book Created Successfully', { variant: 'success' })
         navigate('/')
       })
       .catch((error) => {
         console.log(error)
         setLoading(false)
         // alert("An error occured. Please check console.")
-        enqueueSnackbar('Error', { variant: 'error'})
+        enqueueSnackbar('Error', { variant: 'error' })
 
       })
   }
-  
+
   return (
     <div className='p-4'>
       <BackButton />
