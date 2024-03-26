@@ -29,16 +29,19 @@ function BookModal({ book, onClose }) {
           <BiUserCircle className='text-red-300 text-2xl' />
           <h2 className='my-1'>{book.author}</h2>
         </div>
-        <p className='mt-4'>Anything You want to show</p>
-        <p className='my-2'>
+        <div className="mt-4">
+            <a href={`https://www.google.com/search?q=${book.title}+book`} target="_blank" rel="noopener noreferrer">
+            <span className="text-m mr-4 text-blue-500 underline">Learn More</span>
+            </a>
+          </div>
+        {/* <p className='my-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia
           voluptatum sint. Nisi impedit libero eveniet cum vitae qui expedita
           necessitatibus assumenda laboriosam, facilis iste cumque a pariatur
           nesciunt cupiditate voluptas? Quis atque earum voluptate dolor nisi
           dolorum est? Deserunt placeat cumque quo dicta architecto, dolore
           vitae voluptate sequi repellat!
-          {/* make hyperlink to each book's Wikipedia page based on book.title */}
-        </p>
+        </p> */}
       </div>
     </div>
   )
