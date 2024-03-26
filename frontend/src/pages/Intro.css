@@ -48,12 +48,12 @@
   position: relative;
   left: 75vw;
   top: 65vh;
+  box-shadow: 0 0 40px 40px #fcf1f0 inset;
 
 }
 
 .view:hover,
 .view:focus {
   color: #fcf1f0;
-  outline: 0;
-  box-shadow: 0 0 40px 40px #fcf1f0 inset;
+  border: 2px solid #502564;
 }
