@@ -23,7 +23,7 @@ function CreateBooks() {
       .then(() => {
         setLoading(false)
         enqueueSnackbar('Book Created Successfully', { variant: 'success' })
-        navigate('/')
+        navigate('/home')
       })
       .catch((error) => {
         console.log(error)

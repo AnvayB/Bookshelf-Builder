@@ -18,7 +18,7 @@ function DeleteBooks() {
       .then(() => {
         setLoading(false)
         enqueueSnackbar('Book Deleted Successfully', { variant: 'success' })
-        navigate('/')
+        navigate('/home')
       }).catch((error) => {
         setLoading(false)
         // alert("An error occured. Please check console")
