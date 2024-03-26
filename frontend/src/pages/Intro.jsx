@@ -7,7 +7,7 @@ function Intro() {
     <div className='intro'>
 
     <Link to={'/home'}>
-    <button><p>View Books</p></button>
+    <button className='view'><p>View Books</p></button>
     </Link>
     </div>
   )

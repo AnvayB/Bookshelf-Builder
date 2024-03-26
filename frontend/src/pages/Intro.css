@@ -11,9 +11,7 @@
   justify-content: center;
 }
 
-
-
-button p {
+.view p {
   font-weight: bold;
   font-style: italic;
   font-size: 2em;
@@ -24,8 +22,7 @@ button p {
   color: #502564;
 }
 
-
-button {
+.view {
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
@@ -54,10 +51,9 @@ button {
 
 }
 
-button:hover,
-button:focus {
+.view:hover,
+.view:focus {
   color: #fcf1f0;
   outline: 0;
   box-shadow: 0 0 40px 40px #fcf1f0 inset;
-
 }
