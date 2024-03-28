@@ -1,3 +1,4 @@
+
 * {
   overflow: hidden;
 }
@@ -11,6 +12,22 @@
   justify-content: center;
 }
 
+/* .intro {
+  background: url('../assets/splash-pg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-up {
+  transform: translateY(-100%);
+} */
+
+
+ 
 .view p {
   font-weight: bold;
   font-style: italic;
@@ -49,7 +66,6 @@
   left: 75vw;
   top: 65vh;
   box-shadow: 0 0 40px 40px #fcf1f0 inset;
-
 }
 
 .view:hover,
@@ -57,3 +73,8 @@
   color: #fcf1f0;
   border: 2px solid #502564;
 }
+
+/* .intro:active {
+  transition: transform .1s ease-in-out; 
+  transform: translateY(-100%); 
+} */

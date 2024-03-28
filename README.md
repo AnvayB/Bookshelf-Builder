@@ -7,7 +7,7 @@
 ## Homepage - Table View
 ![table view](https://github.com/AnvayB/Bookshelf-Editor/assets/53208269/4b92bf16-2daf-4108-ab6c-180c40a8cc27)
 - This is the main homepage from where users can view their books, listed by organized by `Title`, `Author`, and `Publish Year`.
-- At the end, there are a few operations that allow the user to `View`, `Edit`, and `Delete` a book.
+- At the end, there are a few operations that allow the user to [View](https://github.com/AnvayB/Bookshelf-Editor?tab=readme-ov-file#show-book), [Edit](https://github.com/AnvayB/Bookshelf-Editor?tab=readme-ov-file#edit-book), and [Delete](https://github.com/AnvayB/Bookshelf-Editor?tab=readme-ov-file#delete-book) a book.
 
 ## Homepage - Card View
 ![card view](https://github.com/AnvayB/Bookshelf-Editor/assets/53208269/4eb764dc-6f16-4483-9bb2-4313b116a632)
