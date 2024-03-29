@@ -60,7 +60,7 @@ function BookModal({ book, onClose }) {
           <span className="text-m mr-4 text-blue-500 underline">Learn More</span>
         </a>
         <div className="mt-4">
-          <button className="search" onClick={handleSearch}>See Image</button>
+          <button className="search" onClick={handleSearch}>See Cover</button>
           {image && <img className="cover" 
             src={image.original} 
             alt={image.title} 
