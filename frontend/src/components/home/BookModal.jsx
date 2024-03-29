@@ -11,11 +11,12 @@ function BookModal({ book, onClose }) {
   const [image, setImage] = useState(null); // Changed to store a single image object
 
   const handleSearch = () => {
-    axios.get(`http://localhost:5000/images?query=${book.title}`)
+    axios.get(`http://localhost:5555/images?query=${book.title}+book`)
       .then((res) => {
         if (res.data.images_results && res.data.images_results.length > 0) {
           // Get first image
-          setImage(res.data.images_results[0]); 
+          setImage(res.data.images_results[0]);
+          console.log(res.data.images_results[0])
         }
       })
       .catch((e) => {
@@ -27,7 +28,7 @@ function BookModal({ book, onClose }) {
 
   return (
     <div
-      className='fixed bg-black bg-opacity-60 top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center'
+      className='fixed bg-black bg-opacity-60 top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center' id="card"
       onClick={onClose}
     >
       <div
@@ -50,17 +51,16 @@ function BookModal({ book, onClose }) {
           <BiUserCircle className='text-red-300 text-2xl' />
           <h2 className='my-1'>{book.author}</h2>
         </div>
-        <div className="mt-4">
-          <a href={`https://www.google.com/search?q=${book.title}+book`} target="_blank" rel="noopener noreferrer">
-            <span className="text-m mr-4 text-blue-500 underline">Learn More</span>
-          </a>
-        </div>
+        <a className="learnmore" href={`https://www.google.com/search?q=${book.title}+book`} target="_blank" rel="noopener noreferrer">
+          <span className="text-m mr-4 text-blue-500 underline">Learn More</span>
+        </a>
         <div className="mt-4">
           <button className="search" onClick={handleSearch}>See Image</button>
-            {image && <img className="cover" src={image.original} alt={image.title} width={"100px"}/>} {/* Display the first image */}
+          {image && <img className="cover" src={image.original} alt={image.title} width={"150px"} />}
         </div>
       </div>
     </div>
+
   )
 }
 
