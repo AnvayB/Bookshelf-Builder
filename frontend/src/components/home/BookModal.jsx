@@ -9,8 +9,11 @@ import './BookModal.css'
 function BookModal({ book, onClose }) {
 
   const [image, setImage] = useState(null); // Changed to store a single image object
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSearch = () => {
+    //start Loading while image is being fetched
+    setIsLoading(true)
     axios.get(`http://localhost:5555/images?query=${book.title}+book`)
       .then((res) => {
         if (res.data.images_results && res.data.images_results.length > 0) {
@@ -18,9 +21,11 @@ function BookModal({ book, onClose }) {
           setImage(res.data.images_results[0]);
           console.log(res.data.images_results[0])
         }
+        setIsLoading(false) //stop loading once image is retrieved
       })
       .catch((e) => {
         console.error(e);
+        setIsLoading(false) //stop loading in case of error
       });
   };
 
@@ -56,7 +61,13 @@ function BookModal({ book, onClose }) {
         </a>
         <div className="mt-4">
           <button className="search" onClick={handleSearch}>See Image</button>
-          {image && <img className="cover" src={image.original} alt={image.title} width={"150px"} />}
+          {image && <img className="cover" 
+            src={image.original} 
+            alt={image.title} 
+            // width={"145px"} 
+            width={"24%"}
+          />}
+          {isLoading && <p>Loading...</p> }
         </div>
       </div>
     </div>

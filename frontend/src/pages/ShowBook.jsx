@@ -54,7 +54,6 @@ function ShowBook() {
             <a href={`https://www.google.com/search?q=${book.title}+book`} target="_blank" rel="noopener noreferrer">
             <span className="text-xl mr-4 text-blue-500 underline">Learn More</span>
             </a>
-            {/* https://www.google.com/search?q=dune+book */}
           </div>
           <div className="my-4">
             <span className="text-xl mr-4 text-gray-500">Create Time</span>

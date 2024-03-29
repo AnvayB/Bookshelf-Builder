@@ -1,16 +1,11 @@
-#card {
-  /* position: relative; */
-}
-
-
 .search {
-  border: 1px solid #fda5a5;
+  border: 2px solid #fda5a5;
   padding: 7px;
   border-radius: 10px;
 }
 
 .cover {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   position: relative;
   bottom: 20%;
   left: 70%;
@@ -18,7 +13,7 @@
 }
 
 .my-2.text-gray-500 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: inline-block;
   width: 55%;
 }
@@ -27,9 +22,9 @@
   margin-top: .5rem;
 }
 
-.my-1 {
-  /* width: 30%; */
-}
+/* .my-1 {
+  width: 30%;
+} */
 
 a.learnmore, .text-m.mr-4.text-blue-500.underline {
   /* display: inline-block; */

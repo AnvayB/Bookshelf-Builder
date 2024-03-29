@@ -16,6 +16,8 @@ function Intro() {
 
 export default Intro
 
+// Homepage Slide Up Code - not working
+
 // import { useState } from 'react';
 // import { Link } from 'react-router-dom';
 // import './Intro.css';
