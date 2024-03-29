@@ -15,7 +15,7 @@
 .my-2.text-gray-500 {
   /* border: 1px solid blue; */
   display: inline-block;
-  width: 55%;
+  width: 100vw
 }
 
 .mt-4 {
