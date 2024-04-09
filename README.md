@@ -33,7 +33,7 @@
 ## Show Book 
 ![show book](https://github.com/AnvayB/Bookshelf-Builder/assets/53208269/4e3ca555-7d1b-4314-a032-a60c31d0e60f)
 - Users can look at more information regarding their books by clicking the `ⓘ` icon in the Operations section.
-- They are also given the option to learn more about the book, which opens a new tab with the book already in the search query.
+- They are also given the option to `Learn More` about the book, which opens a new tab with the book already in the search query.
 ![Learn More](https://github.com/AnvayB/Bookshelf-Builder/assets/53208269/3e24593e-6daf-4339-99b8-96970d071d5d)
 
 ## Edit Book
@@ -43,7 +43,7 @@
 ![edit book 2](https://github.com/AnvayB/Bookshelf-Editor/assets/53208269/9d4714ef-dad8-4473-a50f-5e0e2d06861d)
 
 ## Delete Book
-![delete book](https://github.com/AnvayB/Bookshelf-Editor/assets/53208269/3344d347-e353-49d1-804f-aa3800664a04)
+![delete book](https://github.com/AnvayB/Bookshelf-Builder/assets/53208269/3a425b1e-8ee7-4eaa-8b34-809b5f272189)
 - Users can delete a certain book by clicking the trash icon in the Operations section.
 - The book is removed from the list as shown on the homepage.
 ![delete book 2](https://github.com/AnvayB/Bookshelf-Editor/assets/53208269/a837a0a2-665f-4078-a81b-b294e095995a)
