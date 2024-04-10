@@ -1,4 +1,4 @@
-# BookStore - MERN
+# Bookshelf Builder
 
 ## Splash Page
 ![splash](https://github.com/AnvayB/Bookshelf-Editor/assets/53208269/3875617c-eaea-4d68-bc11-2feca0e8e2a2)
@@ -47,3 +47,18 @@
 - Users can delete a certain book by clicking the trash icon in the Operations section.
 - The book is removed from the list as shown on the homepage.
 ![delete book 2](https://github.com/AnvayB/Bookshelf-Editor/assets/53208269/a837a0a2-665f-4078-a81b-b294e095995a)
+
+
+## Stack
+- `MERN`: MongoDB v8.2, React v18.2 + Vite v5.1, Express v4.18, Node v18.11
+### Notable Dependencies
+#### Frontend:
+- axios@1.6.8
+- react-router-dom@6.22.3
+- tailwindcss@3.4.1
+#### Backend:
+- axios@1.6.8
+- cors@2.8.5
+- express@4.18.3
+- mongoose@8.2.1
+- nodemon@3.1.0
